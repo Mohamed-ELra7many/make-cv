@@ -1,0 +1,177 @@
+/*global setting*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Fredoka', sans-serif;
+    position: relative;
+    background-color: #ddd;
+}
+.container{
+    padding: 30px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 10px 11px 12px 10px #999;
+    position: relative;
+    z-index: 3;
+    max-width: 500px;
+}
+/*start setting form*/
+.container h1{
+    text-align: center;
+    color: gray;
+    font-weight: 500;
+}
+.container form{
+    display: grid;
+}
+.container form .all-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* .container form .all-name .name{
+    flex: 1;
+} */
+.container form label{
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.container form input{
+    width: 90%;
+    margin: 0 auto;
+    outline: none;
+    height: 35px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.container form .city-country{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    margin: 10px 0;
+}
+.container form .city-country #country{
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.container form .city-country .city{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.container form .skils{
+    margin-top: 8px;
+}
+.container form .skils .first,
+.container form .skils .last{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.container form .skils .first input,
+.container form .skils .last input{
+    width: 40%;
+}
+
+.container form #Button{
+    margin: 10px auto;
+    width: 100px;
+    height: 40px;
+    background-color: #030348;
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+/*end setting form*/
+
+/*start result*/
+.result{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 100px;
+    right: 100px;
+    border-radius: 30px;
+    transition: 1s;
+    z-index: 0;
+}
+.result i{
+    position: absolute;
+    right: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .7s;
+    
+}
+.result.vist{
+    bottom: -75%;
+}
+.result i:hover{
+    transform: rotate(360deg);
+}
+.result .container{
+    width: 90%;
+}
+.result .name{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.result .address{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result .address .result-Address{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    margin-left: 20px;
+}
+.result .result-skills{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+.result .result-skills h4{
+    font-size: 18px;
+}
+.result .result-skills li{
+    font-size: 18px;
+    font-weight: bold;
+}
+.result .about-me{
+    display: grid;
+    padding: 20px;
+}
+.result .about-me h4{
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: auto;
+}
+.result .about-me .result-About{
+    line-height: 1.5;
+    color: #999;
+    font-size: 20px;
+    word-break: break-word;
+}
+/*end result*/
